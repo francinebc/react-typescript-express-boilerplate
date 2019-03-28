@@ -4,7 +4,7 @@ const path = require('path'),
 
 module.exports = {
     entry: {
-        app: ['./src/app/App.tsx', 'webpack-hot-middleware/client'],
+        app: ['./src/app/client/App.tsx', 'webpack-hot-middleware/client'],
         vendor: ['react', 'react-dom']
     },
     output: {
@@ -25,7 +25,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'app', 'index.html') }),
+        new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'app', 'client', 'index.html') }),
         new webpack.HotModuleReplacementPlugin()
     ],
     mode: 'development'

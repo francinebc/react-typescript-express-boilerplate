@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "fee9b986bacc0f04e6a0";
+/******/ 	var hotCurrentHash = "9cc8c94cf13d50c8b3a4";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -26838,10 +26838,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./src/app/App.tsx":
-/*!*************************!*\
-  !*** ./src/app/App.tsx ***!
-  \*************************/
+/***/ "./src/app/client/App.tsx":
+/*!********************************!*\
+  !*** ./src/app/client/App.tsx ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26850,8 +26850,8 @@ module.exports = function(module) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-var Hello_1 = __webpack_require__(/*! ./components/Hello */ "./src/app/components/Hello.tsx");
-ReactDOM.render(React.createElement(Hello_1.Hello, { compiler: "Typescript", framework: "React", bundler: "Webpack" }), document.getElementById('root'));
+var Hello_1 = __webpack_require__(/*! ./components/Hello */ "./src/app/client/components/Hello.tsx");
+ReactDOM.render(React.createElement(Hello_1.Hello, null), document.getElementById('root'));
 if (true) {
     module.hot.accept();
 }
@@ -26859,10 +26859,10 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/app/components/Hello.tsx":
-/*!**************************************!*\
-  !*** ./src/app/components/Hello.tsx ***!
-  \**************************************/
+/***/ "./src/app/client/components/Hello.tsx":
+/*!*********************************************!*\
+  !*** ./src/app/client/components/Hello.tsx ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26889,13 +26889,7 @@ var Hello = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Hello.prototype.render = function () {
-        return React.createElement("h1", null,
-            "This is a ",
-            this.props.framework,
-            " application using    ",
-            this.props.compiler,
-            " with ",
-            this.props.bundler);
+        return React.createElement("h1", null, "This is a hello component");
     };
     return Hello;
 }(React.Component));
@@ -26905,13 +26899,13 @@ exports.Hello = Hello;
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./src/app/App.tsx webpack-hot-middleware/client ***!
-  \*************************************************************/
+/*!********************************************************************!*\
+  !*** multi ./src/app/client/App.tsx webpack-hot-middleware/client ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./src/app/App.tsx */"./src/app/App.tsx");
+__webpack_require__(/*! ./src/app/client/App.tsx */"./src/app/client/App.tsx");
 module.exports = __webpack_require__(/*! webpack-hot-middleware/client */"./node_modules/webpack-hot-middleware/client.js");
 
 

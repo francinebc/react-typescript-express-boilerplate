@@ -1,12 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>React with Typescript and Webpack</title>
-</head>
-<body>
-    <div id="root"></div>
-<script type="text/javascript" src="js/app.bundle.js"></script><script type="text/javascript" src="js/vendor.bundle.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Entry module not found: Error: Can't resolve '/home/francine/workspace/another-ts-attempt/src/app/client/index.html' in '/home/francine/workspace/another-ts-attempt':
+  Error: Can't resolve '/home/francine/workspace/another-ts-attempt/src/app/client/index.html' in '/home/francine/workspace/another-ts-attempt'
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [another-ts-attempt]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:306 compile
+    [another-ts-attempt]/[webpack]/lib/Compiler.js:306:11
+  
+  - Compiler.js:630 hooks.afterCompile.callAsync.err
+    [another-ts-attempt]/[webpack]/lib/Compiler.js:630:14
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [another-ts-attempt]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:627 compilation.seal.err
+    [another-ts-attempt]/[webpack]/lib/Compiler.js:627:30
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [another-ts-attempt]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1325 hooks.optimizeAssets.callAsync.err
+    [another-ts-attempt]/[webpack]/lib/Compilation.js:1325:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [another-ts-attempt]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1316 hooks.optimizeChunkAssets.callAsync.err
+    [another-ts-attempt]/[webpack]/lib/Compilation.js:1316:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [another-ts-attempt]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1311 hooks.additionalAssets.callAsync.err
+    [another-ts-attempt]/[webpack]/lib/Compilation.js:1311:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [another-ts-attempt]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1307 hooks.optimizeTree.callAsync.err
+    [another-ts-attempt]/[webpack]/lib/Compilation.js:1307:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [another-ts-attempt]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1244 Compilation.seal
+    [another-ts-attempt]/[webpack]/lib/Compilation.js:1244:27
+  
+  - Compiler.js:624 hooks.make.callAsync.err
+    [another-ts-attempt]/[webpack]/lib/Compiler.js:624:17
+  
+  
+  - Compilation.js:1095 _addModuleChain
+    [another-ts-attempt]/[webpack]/lib/Compilation.js:1095:12
+  
+  - Compilation.js:947 errorAndCallback.bail.err
+    [another-ts-attempt]/[webpack]/lib/Compilation.js:947:6
+  
+  - Compilation.js:980 moduleFactory.create
+    [another-ts-attempt]/[webpack]/lib/Compilation.js:980:14
+  
+  - NormalModuleFactory.js:397 factory
+    [another-ts-attempt]/[webpack]/lib/NormalModuleFactory.js:397:22
+  
+  - NormalModuleFactory.js:130 resolver
+    [another-ts-attempt]/[webpack]/lib/NormalModuleFactory.js:130:21
+  
+  - NormalModuleFactory.js:224 asyncLib.parallel
+    [another-ts-attempt]/[webpack]/lib/NormalModuleFactory.js:224:22
+  
+  - async.js:2825 
+    [another-ts-attempt]/[neo-async]/async.js:2825:7
+  
+</pre><script type="text/javascript" src="js/app.bundle.js"></script><script type="text/javascript" src="js/vendor.bundle.js"></script>
